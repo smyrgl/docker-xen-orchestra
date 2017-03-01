@@ -20,8 +20,8 @@ RUN curl -o /usr/local/bin/n https://raw.githubusercontent.com/visionmedia/n/mas
         chmod +x /usr/local/bin/n && n 4.4.7
 
 # Clone code
-RUN git clone --depth=1 -b v5.3.0 http://github.com/vatesfr/xo-server && \
-    git clone --depth=1 -b v5.3.0 http://github.com/vatesfr/xo-web && \
+RUN git clone --depth=1 -b v5.6.2 http://github.com/vatesfr/xo-server && \
+    git clone --depth=1 -b v5.6.2 http://github.com/vatesfr/xo-web && \
     rm -rf xo-server/.git xo-web/.git xo-server/sample.config.yaml
 
 # Build dependancies then cleanup
